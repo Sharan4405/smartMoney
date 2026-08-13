@@ -14,16 +14,16 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-9 px-6 py-24 sm:px-8 sm:py-32 lg:px-12">
-        <span className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-7 px-6 py-20 sm:px-8 sm:py-24 lg:px-12">
+        <span className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           {COMPANY.tagline}
         </span>
 
-        <h1 className="max-w-3xl text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-3xl text-[32px] font-extrabold leading-[1.2] tracking-tight md:text-[54px]">
           SIP today, <span className="text-accent">smile forever.</span>
         </h1>
 
-        <p className="max-w-2xl text-lg text-white/75 sm:text-xl">
+        <p className="max-w-2xl text-[15px] leading-[1.75] text-white/75 md:text-base">
           Smart Money Consultancy helps you grow your wealth through mutual funds and
           insurance guidance built on disciplined, goal-based investing — not guesswork.
         </p>
@@ -37,13 +37,13 @@ export function Hero() {
           </Button>
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-8 text-base text-white/70">
+        <div className="mt-4 flex flex-wrap gap-8 text-[13px] text-white/70">
           <span className="flex items-center gap-2">
-            <Icon name="check" className="h-5 w-5 text-accent" />
+            <Icon name="check" className="h-4 w-4 text-accent" />
             SEBI-aware, discipline-first guidance
           </span>
           <span className="flex items-center gap-2">
-            <Icon name="check" className="h-5 w-5 text-accent" />
+            <Icon name="check" className="h-4 w-4 text-accent" />
             Goal-based mutual fund planning
           </span>
         </div>

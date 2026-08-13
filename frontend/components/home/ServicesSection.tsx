@@ -6,8 +6,8 @@ import { SERVICES } from "@/data/services";
 
 export function ServicesSection() {
   return (
-    <section className="py-24 sm:py-32">
-      <Container className="flex flex-col gap-14">
+    <section className="py-20 sm:py-24">
+      <Container className="flex flex-col gap-12">
         <Reveal>
           <SectionHeading
             eyebrow="What we offer"

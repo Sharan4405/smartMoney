@@ -11,17 +11,17 @@ export function PageHero({
 }) {
   return (
     <section className="bg-primary text-white">
-      <Container className="flex flex-col gap-5 py-20 sm:py-24">
+      <Container className="flex flex-col gap-4 py-16 sm:py-20">
         {eyebrow && (
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+          <span className="text-[14px] font-extrabold uppercase tracking-[2px] text-accent">
             {eyebrow}
           </span>
         )}
-        <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+        <h1 className="max-w-3xl text-[28px] md:text-[40px] font-extrabold leading-tight tracking-tight">
           {title}
         </h1>
         {description && (
-          <p className="max-w-2xl text-lg text-white/75 sm:text-xl">{description}</p>
+          <p className="max-w-2xl text-[15px] md:text-base text-white/75">{description}</p>
         )}
       </Container>
     </section>

@@ -7,8 +7,8 @@ import { BLOG_POSTS } from "@/data/blog";
 
 export function BlogPreview() {
   return (
-    <section className="bg-bg-alt py-24 sm:py-32">
-      <Container className="flex flex-col gap-14">
+    <section className="bg-bg-alt py-20 sm:py-24">
+      <Container className="flex flex-col gap-12">
         <Reveal>
           <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
             <SectionHeading eyebrow="Insights" title="From our blog" align="left" />

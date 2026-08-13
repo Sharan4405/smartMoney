@@ -11,16 +11,16 @@ const FACTS = [
 
 export function TrustSection() {
   return (
-    <section className="border-b border-border bg-bg-alt py-14">
+    <section className="border-b border-border bg-bg-alt py-12">
       <Container>
         <Reveal>
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {FACTS.map((fact) => (
-              <div key={fact.label} className="flex flex-col gap-2">
-                <span className="text-sm font-semibold uppercase tracking-wide text-muted">
+              <div key={fact.label} className="flex flex-col gap-1">
+                <span className="text-[12px] font-bold uppercase tracking-wide text-muted">
                   {fact.label}
                 </span>
-                <span className="text-base font-semibold text-primary sm:text-lg">
+                <span className="text-[14px] font-semibold text-primary">
                   {fact.value}
                 </span>
               </div>

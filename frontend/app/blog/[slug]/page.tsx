@@ -38,16 +38,16 @@ export default async function BlogPostPage({
       <PageHero eyebrow={post.category} title={post.title} description={post.excerpt} />
 
       <section className="py-20 sm:py-24">
-        <Container className="flex flex-col gap-9 lg:max-w-3xl">
+        <Container className="flex flex-col gap-8 lg:max-w-3xl">
           <Reveal>
-            <span className="w-fit rounded-full bg-bg-alt px-3 py-1.5 text-sm font-semibold text-muted">
+            <span className="w-fit rounded-full bg-bg-alt px-3 py-1 text-[11.5px] font-bold text-muted">
               Sample article — for illustration
             </span>
           </Reveal>
 
-          <Reveal className="flex flex-col gap-6">
+          <Reveal className="flex flex-col gap-5">
             {post.content.map((paragraph, i) => (
-              <p key={i} className="text-lg leading-relaxed text-muted">
+              <p key={i} className="text-[14.5px] leading-relaxed text-muted">
                 {paragraph}
               </p>
             ))}

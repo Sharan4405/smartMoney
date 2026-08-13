@@ -11,19 +11,19 @@ const STEPS = [
 
 export function ProcessSection() {
   return (
-    <section className="py-24 sm:py-32">
-      <Container className="flex flex-col gap-14">
+    <section className="py-20 sm:py-24">
+      <Container className="flex flex-col gap-12">
         <Reveal>
           <SectionHeading eyebrow="How it works" title="A simple, guided process" />
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s, i) => (
             <Reveal key={s.step} delay={i * 80}>
-              <div className="flex flex-col gap-3">
-                <span className="text-4xl font-bold text-accent">{s.step}</span>
-                <h3 className="text-lg font-semibold text-primary">{s.title}</h3>
-                <p className="text-base leading-relaxed text-muted">{s.description}</p>
+              <div className="flex flex-col gap-2">
+                <span className="text-[28px] font-extrabold text-accent">{s.step}</span>
+                <h3 className="text-[16px] font-bold text-primary">{s.title}</h3>
+                <p className="text-[14px] leading-relaxed text-muted">{s.description}</p>
               </div>
             </Reveal>
           ))}

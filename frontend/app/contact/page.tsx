@@ -21,18 +21,18 @@ export default function ContactPage() {
       />
 
       <section className="py-20 sm:py-24">
-        <Container className="grid grid-cols-1 gap-14 lg:grid-cols-3">
+        <Container className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <Reveal className="lg:col-span-2">
             <ContactForm />
           </Reveal>
 
           <Reveal>
-            <div className="flex flex-col gap-7 rounded-lg border border-border bg-bg-alt p-8">
-              <div className="flex items-start gap-4">
-                <Icon name="shield" className="mt-0.5 h-6 w-6 text-secondary" />
+            <div className="flex flex-col gap-6 rounded-lg border border-border bg-bg-alt p-8">
+              <div className="flex items-start gap-3">
+                <Icon name="shield" className="mt-0.5 h-5 w-5 text-secondary" />
                 <div>
-                  <p className="text-base font-semibold text-primary">Address</p>
-                  <p className="text-base text-muted">
+                  <p className="text-[14px] font-semibold text-primary">Address</p>
+                  <p className="text-[14px] text-muted">
                     {COMPANY.address.line1}
                     <br />
                     {COMPANY.address.line2}
@@ -42,21 +42,21 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <Icon name="handshake" className="mt-0.5 h-6 w-6 text-secondary" />
+              <div className="flex items-start gap-3">
+                <Icon name="handshake" className="mt-0.5 h-5 w-5 text-secondary" />
                 <div>
-                  <p className="text-base font-semibold text-primary">Phone</p>
-                  <a href={COMPANY.phoneHref} className="text-base text-muted hover:text-secondary">
+                  <p className="text-[14px] font-semibold text-primary">Phone</p>
+                  <a href={COMPANY.phoneHref} className="text-[14px] text-muted hover:text-secondary">
                     {COMPANY.phone}
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <Icon name="compass" className="mt-0.5 h-6 w-6 text-secondary" />
+              <div className="flex items-start gap-3">
+                <Icon name="compass" className="mt-0.5 h-5 w-5 text-secondary" />
                 <div>
-                  <p className="text-base font-semibold text-primary">Director</p>
-                  <p className="text-base text-muted">{COMPANY.director}</p>
+                  <p className="text-[14px] font-semibold text-primary">Director</p>
+                  <p className="text-[14px] text-muted">{COMPANY.director}</p>
                 </div>
               </div>
             </div>

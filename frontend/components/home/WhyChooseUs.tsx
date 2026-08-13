@@ -28,8 +28,8 @@ const REASONS: { icon: IconName; title: string; description: string }[] = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-bg-alt py-24 sm:py-32">
-      <Container className="flex flex-col gap-14">
+    <section className="bg-bg-alt py-20 sm:py-24">
+      <Container className="flex flex-col gap-12">
         <Reveal>
           <SectionHeading eyebrow="Why Smart Money" title="Why choose Smart Money Consultancy?" />
         </Reveal>
@@ -37,12 +37,12 @@ export function WhyChooseUs() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {REASONS.map((reason, i) => (
             <Reveal key={reason.title} delay={i * 80}>
-              <div className="flex h-full flex-col gap-5 rounded-lg bg-white p-8 shadow-sm">
-                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary/10 text-secondary">
-                  <Icon name={reason.icon} className="w-7 h-7" />
+              <div className="flex h-full flex-col gap-4 rounded-lg bg-white pt-9.25 px-7.5 pb-10 shadow-sm">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+                  <Icon name={reason.icon} className="w-6 h-6" />
                 </span>
-                <h3 className="text-lg font-semibold text-primary">{reason.title}</h3>
-                <p className="text-base leading-relaxed text-muted">{reason.description}</p>
+                <h3 className="text-[20px] font-bold text-primary">{reason.title}</h3>
+                <p className="text-[14px] leading-relaxed text-muted">{reason.description}</p>
               </div>
             </Reveal>
           ))}
