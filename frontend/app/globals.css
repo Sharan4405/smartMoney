@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0b1b33;
+  --color-primary-light: #14294a;
+  --color-secondary: #1f4d3a;
+  --color-secondary-light: #2e6b4f;
+  --color-accent: #d9a441;
+  --color-accent-light: #e8b84b;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f8fb;
+  --color-ink: #0b1220;
+  --color-muted: #5b6472;
+  --color-border: #e4e8ef;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-sm: 0 2px 8px rgba(11, 27, 51, 0.06);
+  --shadow-md: 0 8px 24px rgba(11, 27, 51, 0.1);
+  --shadow-lg: 0 20px 48px rgba(11, 27, 51, 0.16);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-bg: var(--color-bg);
+  --color-bg-alt: var(--color-bg-alt);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), var(--font-sans), sans-serif;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
