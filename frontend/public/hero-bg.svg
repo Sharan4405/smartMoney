@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1b33"/>
+      <stop offset="0.55" stop-color="#0d2140"/>
+      <stop offset="1" stop-color="#14294a"/>
+    </linearGradient>
+    <radialGradient id="glowGold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1360 150) rotate(90) scale(420)">
+      <stop offset="0" stop-color="#d9a441" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 820) rotate(-40) scale(460)">
+      <stop offset="0" stop-color="#2e6b4f" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#2e6b4f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="chartFill" x1="0" y1="520" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9a441" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="900" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8b84b"/>
+      <stop offset="1" stop-color="#d9a441"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#base)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#glowGold)"/>
+  <rect width="1600" height="900" fill="url(#glowGreen)"/>
+
+  <!-- upward growth chart motif, bottom-right -->
+  <g opacity="0.9">
+    <path d="M760 720 L900 660 L1030 690 L1180 560 L1320 600 L1470 470 L1600 500 L1600 900 L760 900 Z" fill="url(#chartFill)"/>
+    <path d="M760 720 L900 660 L1030 690 L1180 560 L1320 600 L1470 470 L1600 500" fill="none" stroke="url(#chartLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+    <g fill="#e8b84b">
+      <circle cx="900" cy="660" r="5"/>
+      <circle cx="1030" cy="690" r="5"/>
+      <circle cx="1180" cy="560" r="5"/>
+      <circle cx="1320" cy="600" r="5"/>
+      <circle cx="1470" cy="470" r="6"/>
+    </g>
+  </g>
+
+  <!-- faint concentric rings, top-right accent -->
+  <g fill="none" stroke="#d9a441" stroke-opacity="0.10">
+    <circle cx="1360" cy="150" r="120"/>
+    <circle cx="1360" cy="150" r="200"/>
+    <circle cx="1360" cy="150" r="290"/>
+  </g>
+</svg>

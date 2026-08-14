@@ -11,7 +11,7 @@ export function PageHero({
 }) {
   return (
     <section className="bg-primary text-white">
-      <Container className="flex flex-col gap-4 py-16 sm:py-20">
+      <Container className="flex flex-col gap-4 pb-16 pt-32 sm:pb-20 sm:pt-36">
         {eyebrow && (
           <span className="text-[14px] font-extrabold uppercase tracking-[2px] text-accent">
             {eyebrow}

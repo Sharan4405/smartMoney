@@ -1,4 +1,13 @@
-export type IconName = "growth" | "shield" | "heart" | "scale" | "check" | "compass" | "target" | "handshake";
+export type IconName =
+  | "growth"
+  | "shield"
+  | "heart"
+  | "scale"
+  | "check"
+  | "compass"
+  | "target"
+  | "handshake"
+  | "arrowUp";
 
 const PATHS: Record<IconName, string> = {
   growth: "M3 17l5-5 4 4 8-9M15 6h5v5",
@@ -11,6 +20,7 @@ const PATHS: Record<IconName, string> = {
   target: "M12 22a10 10 0 100-20 10 10 0 000 20zM12 17a5 5 0 100-10 5 5 0 000 10zM12 13a1 1 0 100-2 1 1 0 000 2z",
   handshake:
     "M8 12l3 3 5-5M2 12l4-4 4 2 4-3 4 3 4-2v6l-4 4-4-2-4 3-4-2-4-2z",
+  arrowUp: "M12 19V5M5 12l7-7 7 7",
 };
 
 export function Icon({ name, className = "w-6 h-6" }: { name: IconName; className?: string }) {

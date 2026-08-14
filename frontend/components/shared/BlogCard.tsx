@@ -5,7 +5,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col gap-3 rounded-lg border border-border bg-white p-7 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+      className="group flex h-full flex-col gap-3 rounded-lg border border-border bg-white p-7 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
     >
       <span className="w-fit rounded-full bg-bg-alt px-3 py-1 text-[11.5px] font-bold uppercase tracking-wide text-secondary">
         {post.category}
