@@ -3,12 +3,13 @@ import { PageHero } from "@/components/shared/PageHero";
 import { Container } from "@/components/shared/Container";
 import { ServiceCard } from "@/components/shared/ServiceCard";
 import { Reveal } from "@/components/shared/Reveal";
+import { CTASection } from "@/components/shared/CTASection";
 import { SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Mutual funds, SIP, health insurance, and life insurance guidance from Smart Money Consultancy.",
+    "Mutual funds, SIP, health insurance, and life insurance guidance from Smart Money Consultancy Private Limited.",
 };
 
 export default function ServicesPage() {
@@ -30,6 +31,8 @@ export default function ServicesPage() {
           </div>
         </Container>
       </section>
+
+      <CTASection />
     </>
   );
 }

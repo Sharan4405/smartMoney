@@ -4,6 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { Reveal } from "@/components/shared/Reveal";
 import { Icon } from "@/components/shared/Icon";
 import { Button } from "@/components/ui/Button";
+import { CTASection } from "@/components/shared/CTASection";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -104,6 +105,8 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
+
+      <CTASection />
     </>
   );
 }

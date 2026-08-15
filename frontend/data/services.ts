@@ -2,7 +2,7 @@ export type Service = {
   slug: string;
   title: string;
   shortDescription: string;
-  icon: "growth" | "shield" | "heart" | "scale";
+  image: string;
   points: string[];
   detail: string;
 };
@@ -13,7 +13,7 @@ export const SERVICES: Service[] = [
     title: "Mutual Funds & SIP",
     shortDescription:
       "Disciplined, goal-based investing through Systematic Investment Plans built around your timeline and risk appetite.",
-    icon: "growth",
+    image: "/services/mutual-funds-sip.svg",
     points: [
       "Start small with SIP and build wealth over the long term",
       "Professional fund management by experienced teams",
@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
     title: "FD vs Mutual Funds Guidance",
     shortDescription:
       "Understand how fixed deposits and mutual funds differ so you can choose the right mix for your goals.",
-    icon: "scale",
+    image: "/services/fd-vs-mutual-funds.svg",
     points: [
       "Fixed deposits offer fixed, low but predictable returns",
       "Mutual funds are market-linked with potentially higher long-term growth",
@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
     title: "Health Insurance",
     shortDescription:
       "Protect your family's health and finances with the right coverage for hospitalisation and medical emergencies.",
-    icon: "shield",
+    image: "/services/health-insurance.svg",
     points: [
       "Covers hospitalisation and major medical expenses",
       "Cashless treatment at a wide network of hospitals",
@@ -58,7 +58,7 @@ export const SERVICES: Service[] = [
     title: "Life Insurance",
     shortDescription:
       "Secure your loved ones' future with a protection plan that covers life's uncertainties.",
-    icon: "heart",
+    image: "/services/life-insurance.svg",
     points: [
       "Provides financial security to your family in your absence",
       "Helps cover debts, expenses, and future goals",

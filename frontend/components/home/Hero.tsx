@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { Icon } from "@/components/shared/Icon";
 import { COMPANY } from "@/lib/constants";
 
 export function Hero() {
@@ -19,7 +19,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-7 px-6 pb-20 pt-32 sm:px-8 sm:pb-24 sm:pt-36 lg:px-12">
+      <div className="relative mx-auto flex min-h-[93.5vh] w-full max-w-7xl flex-col items-center justify-center gap-7 px-6 pb-30 pt-40 text-center sm:px-8 sm:pb-37 sm:pt-47 lg:px-12">
         <span
           className="hero-fade inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent"
           style={{ animationDelay: "0.05s" }}
@@ -28,44 +28,37 @@ export function Hero() {
         </span>
 
         <h1
-          className="hero-fade max-w-3xl text-[32px] font-extrabold leading-[1.2] tracking-tight md:text-[54px]"
-          style={{ animationDelay: "0.18s" }}
+          className="hero-fade max-w-3xl text-[36px] font-extrabold leading-[1.12] tracking-tight md:text-[60px]"
+          style={{ animationDelay: "0.16s" }}
         >
           SIP today, <span className="text-accent">smile forever.</span>
         </h1>
 
         <p
-          className="hero-fade max-w-2xl text-[15px] leading-[1.75] text-white/75 md:text-base"
-          style={{ animationDelay: "0.31s" }}
+          className="hero-fade max-w-2xl text-[15px] leading-[1.8] text-white/75 md:text-[17px]"
+          style={{ animationDelay: "0.28s" }}
         >
-          Smart Money Consultancy helps you grow your wealth through mutual funds and
-          insurance guidance built on disciplined, goal-based investing — not guesswork.
+          Smart Money Consultancy helps you grow your wealth through mutual funds,
+          SIPs, and insurance guidance built on disciplined, goal-based investing —
+          not guesswork.
         </p>
 
         <div
-          className="hero-fade flex flex-wrap gap-4"
-          style={{ animationDelay: "0.44s" }}
+          className="hero-fade mt-2 flex flex-wrap items-center justify-center gap-6"
+          style={{ animationDelay: "0.4s" }}
         >
           <Button href="/contact" variant="primary">
             Book a Free Consultation
           </Button>
-          <Button href="/services" variant="ghost">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-white/80 transition-colors hover:text-accent"
+          >
             Explore Services
-          </Button>
-        </div>
-
-        <div
-          className="hero-fade mt-4 flex flex-wrap gap-8 text-[13px] text-white/70"
-          style={{ animationDelay: "0.57s" }}
-        >
-          <span className="flex items-center gap-2">
-            <Icon name="check" className="h-4 w-4 text-accent" />
-            SEBI-aware, discipline-first guidance
-          </span>
-          <span className="flex items-center gap-2">
-            <Icon name="check" className="h-4 w-4 text-accent" />
-            Goal-based mutual fund planning
-          </span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+              <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

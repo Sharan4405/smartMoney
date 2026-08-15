@@ -43,6 +43,42 @@ export const BLOG_POSTS: BlogPost[] = [
       "Good health is priceless, but health insurance is your safety net — small premium today, big savings and peace of mind tomorrow.",
     ],
   },
+  {
+    slug: "two-pillars-mutual-funds-life-insurance",
+    title: "Two Pillars of a Strong Financial Plan",
+    category: "Insurance",
+    excerpt:
+      "Mutual funds help your money grow. Life insurance protects the people who depend on you. A complete plan needs both.",
+    content: [
+      "It's tempting to treat investing and insurance as separate decisions, but they answer two different questions: mutual funds ask 'how do I grow my wealth?', while life insurance asks 'what happens to my family if I'm not around to keep growing it?'",
+      "A term life insurance plan is designed to replace your income for your family — covering ongoing expenses, outstanding debts, and future goals like a child's education — for a relatively small premium.",
+      "Neither pillar replaces the other. Growth without protection leaves your family exposed to risk; protection without growth leaves your money underworked. A balanced plan treats them as a pair, not a choice.",
+    ],
+  },
+  {
+    slug: "dont-put-all-your-eggs-in-one-basket",
+    title: "Don't Put All Your Eggs in One Basket",
+    category: "Mutual Funds",
+    excerpt:
+      "The simplest risk-management idea in investing is also one of the most overlooked: spreading your money across sectors, not concentrating it in one bet.",
+    content: [
+      "Diversification means spreading your investments across different sectors and asset types, so that a downturn in any single one doesn't derail your entire portfolio.",
+      "This is one of the core reasons mutual funds work well for most investors — a single fund can hold dozens of companies across industries, giving you built-in diversification that would be difficult and expensive to replicate by picking individual stocks yourself.",
+      "Diversification doesn't eliminate risk, and it doesn't guarantee returns — but it does mean your financial future isn't riding on any one company, sector, or decision going right.",
+    ],
+  },
+  {
+    slug: "power-of-compounding-start-early",
+    title: "The Power of Compounding: Why Starting Early Matters",
+    category: "Financial Planning",
+    excerpt:
+      "The biggest advantage in investing usually isn't a smarter strategy — it's time. Here's why starting today matters more than starting big.",
+    content: [
+      "Compounding means your returns start generating their own returns. Left undisturbed, a disciplined investment doesn't just grow — it grows faster the longer it stays invested.",
+      "This is why time in the market tends to matter more than timing the market: an investor who starts small but starts early gives compounding far more room to work than one who waits for the 'right moment' to invest a larger amount later.",
+      "Market up or down, the discipline of investing consistently and staying invested is what lets compounding do its job. Aaj plan kare, kal ka fayda — the earlier you start, the more time is on your side.",
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string) {

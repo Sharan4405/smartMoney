@@ -31,7 +31,7 @@ export function WhyChooseUs() {
     <section className="bg-bg-alt py-20 sm:py-24">
       <Container className="flex flex-col gap-12">
         <Reveal>
-          <SectionHeading eyebrow="Why Smart Money" title="Why choose Smart Money Consultancy?" />
+          <SectionHeading eyebrow="Why Smart Money" title="Why choose Smart Money Consultancy Private Limited?" />
         </Reveal>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

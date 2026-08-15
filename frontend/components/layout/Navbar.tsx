@@ -89,7 +89,7 @@ export function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-border bg-white px-6 py-7 sm:px-8">
+        <div className="md:hidden max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-border bg-white px-6 py-7 sm:px-8">
           <nav className="flex flex-col gap-5">
             {NAV_LINKS.map((link) => (
               <Link

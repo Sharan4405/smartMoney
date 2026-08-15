@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">Mutual Funds and SIP growth illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <line x1="48" y1="230" x2="352" y2="230" stroke="#E4E8EF" stroke-width="2"/>
+  <rect x="70" y="190" width="34" height="40" rx="4" fill="#2E6B4F" opacity="0.35"/>
+  <rect x="126" y="165" width="34" height="65" rx="4" fill="#2E6B4F" opacity="0.55"/>
+  <rect x="182" y="140" width="34" height="90" rx="4" fill="#1F4D3A" opacity="0.75"/>
+  <rect x="238" y="105" width="34" height="125" rx="4" fill="#1F4D3A"/>
+  <rect x="294" y="70" width="34" height="160" rx="4" fill="#0B1B33"/>
+  <polyline points="87,182 143,155 199,128 255,92 311,58" fill="none" stroke="#D9A441" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="311,58 331,58 311,78" fill="#D9A441"/>
+  <circle cx="87" cy="182" r="6" fill="#D9A441"/>
+  <circle cx="143" cy="155" r="6" fill="#D9A441"/>
+  <circle cx="199" cy="128" r="6" fill="#D9A441"/>
+  <circle cx="255" cy="92" r="6" fill="#D9A441"/>
+</svg>

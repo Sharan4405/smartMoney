@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">Life insurance family protection illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <path d="M200 50 C255 80 300 78 300 78 C300 170 260 225 200 250 C140 225 100 170 100 78 C100 78 145 80 200 50 Z" fill="#1F4D3A" opacity="0.14"/>
+  <path d="M200 65 C245 90 282 88 282 88 C282 162 250 208 200 230 C150 208 118 162 118 88 C118 88 155 90 200 65 Z" fill="none" stroke="#1F4D3A" stroke-width="4"/>
+
+  <circle cx="200" cy="140" r="16" fill="#0B1B33"/>
+  <path d="M172 190 C172 168 184 158 200 158 C216 158 228 168 228 190 Z" fill="#0B1B33"/>
+
+  <circle cx="158" cy="150" r="11" fill="#2E6B4F"/>
+  <path d="M140 188 C140 172 148 164 158 164 C168 164 176 172 176 188 Z" fill="#2E6B4F"/>
+
+  <circle cx="242" cy="150" r="11" fill="#2E6B4F"/>
+  <path d="M224 188 C224 172 232 164 242 164 C252 164 260 172 260 188 Z" fill="#2E6B4F"/>
+
+  <path d="M188 108 C188 100 193 95 200 95 C207 95 212 100 212 108 C212 116 200 124 200 124 C200 124 188 116 188 108 Z" fill="#D9A441"/>
+</svg>

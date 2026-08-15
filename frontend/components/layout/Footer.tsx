@@ -12,6 +12,19 @@ export function Footer() {
             <Logo dark />
             <p className="text-[15px] leading-7 text-white/70">{COMPANY.tagline}</p>
             <p className="text-[15px] leading-7 text-white/70">Director: {COMPANY.director}</p>
+            <a
+              href={COMPANY.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Smart Money Consultancy on Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-accent hover:text-accent"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4.2" />
+                <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
           </div>
 
           <div className="flex flex-col gap-3">

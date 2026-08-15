@@ -3,8 +3,9 @@ export const COMPANY = {
   shortName: "Smart Money",
   director: "Sandeep Kumar Jain",
   tagline: "Smart Advice. Secure Future.",
-  phone: "+91 98280 XXXXX",
-  phoneHref: "tel:+9198280XXXXX",
+  phone: "+91 98280 11802",
+  phoneHref: "tel:+919828011802",
+  instagramUrl: "https://www.instagram.com/smart_moneyconsultancy",
   address: {
     line1: "3rd Floor, E-2 Amrapali Plaza",
     line2: "Amrapali Circle, Vaishali Nagar",

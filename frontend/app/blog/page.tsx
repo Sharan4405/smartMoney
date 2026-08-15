@@ -3,11 +3,12 @@ import { PageHero } from "@/components/shared/PageHero";
 import { Container } from "@/components/shared/Container";
 import { BlogCard } from "@/components/shared/BlogCard";
 import { Reveal } from "@/components/shared/Reveal";
+import { CTASection } from "@/components/shared/CTASection";
 import { BLOG_POSTS } from "@/data/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Insights on mutual funds, SIP, and insurance from Smart Money Consultancy.",
+  description: "Insights on mutual funds, SIP, and insurance from Smart Money Consultancy Private Limited.",
 };
 
 export default function BlogPage() {
@@ -29,6 +30,8 @@ export default function BlogPage() {
           </div>
         </Container>
       </section>
+
+      <CTASection />
     </>
   );
 }

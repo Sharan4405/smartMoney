@@ -11,7 +11,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
       >
         <Image
           src="/logo_transparent.svg"
-          alt="Smart Money Consultancy logo"
+          alt="Smart Money Consultancy Private Limited logo"
           width={508}
           height={491}
           priority
@@ -21,11 +21,11 @@ export function Logo({ dark = false }: { dark?: boolean }) {
       <span className={`flex flex-col leading-tight ${dark ? "text-white" : "text-primary"}`}>
         <span className="text-[18px] font-bold tracking-tight">Smart Money</span>
         <span
-          className={`text-[12px] font-medium uppercase tracking-[0.18em] ${
+          className={`max-w-35 text-[10px] font-medium uppercase leading-snug tracking-[0.06em] sm:max-w-none sm:whitespace-nowrap ${
             dark ? "text-white/70" : "text-muted"
           }`}
         >
-          Consultancy
+          Consultancy Private Limited
         </span>
       </span>
     </Link>

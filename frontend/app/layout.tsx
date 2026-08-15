@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: `%s | ${COMPANY.shortName}`,
   },
   description:
-    "Smart Money Consultancy helps you grow your wealth through mutual funds, SIP, and insurance guidance built on disciplined, goal-based investing.",
+    "Smart Money Consultancy Private Limited helps you grow your wealth through mutual funds, SIP, and insurance guidance built on disciplined, goal-based investing.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
