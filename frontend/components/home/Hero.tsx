@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { COMPANY } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -20,16 +19,9 @@ export function Hero() {
       />
 
       <div className="relative mx-auto flex min-h-[93.5vh] w-full max-w-7xl flex-col items-center justify-center gap-7 px-6 pb-30 pt-40 text-center sm:px-8 sm:pb-37 sm:pt-47 lg:px-12">
-        <span
-          className="hero-fade inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4.5 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent"
-          style={{ animationDelay: "0.05s" }}
-        >
-          {COMPANY.tagline}
-        </span>
-
         <h1
           className="hero-fade max-w-3xl text-[36px] font-extrabold leading-[1.12] tracking-tight md:text-[60px]"
-          style={{ animationDelay: "0.16s" }}
+          style={{ animationDelay: "0.05s" }}
         >
           SIP today, <span className="text-accent">smile forever.</span>
         </h1>

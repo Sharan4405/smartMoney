@@ -5,15 +5,50 @@ import { FormEvent, useState } from "react";
 const inputClasses =
   "rounded-sm border border-border px-5 py-3 text-[14px] outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20";
 
-export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+type Status = "idle" | "loading" | "success" | "error";
+
+export function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const res = await fetch(`${API_URL}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok) {
+        setErrorMessage(data?.message ?? "Something went wrong. Please try again.");
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setErrorMessage("Couldn't reach the server. Please check your connection and try again.");
+      setStatus("error");
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="flex flex-col gap-2 rounded-lg border border-border bg-bg-alt p-8">
         <h3 className="text-[18px] font-bold text-primary">Thank you!</h3>
@@ -55,11 +90,16 @@ export function ContactForm() {
         <textarea id="message" name="message" rows={4} required className={inputClasses} />
       </div>
 
+      {status === "error" && (
+        <p className="text-[14px] font-medium text-red-600">{errorMessage}</p>
+      )}
+
       <button
         type="submit"
-        className="inline-flex w-fit items-center justify-center rounded-full bg-accent px-7 py-3.25 text-[14px] font-semibold text-primary transition-colors hover:bg-accent-light"
+        disabled={status === "loading"}
+        className="inline-flex w-fit items-center justify-center rounded-full bg-accent px-7 py-3.25 text-[14px] font-semibold text-primary transition-colors hover:bg-accent-light disabled:cursor-not-allowed disabled:opacity-60"
       >
-        Send Message
+        {status === "loading" ? "Sending..." : "Send Message"}
       </button>
     </form>
   );
