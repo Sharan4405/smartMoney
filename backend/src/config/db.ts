@@ -1,17 +1,30 @@
 import mongoose from "mongoose";
 
-export async function connectDB(): Promise<void> {
+let connectionPromise: Promise<typeof mongoose> | null = null;
+
+export function connectDB(): Promise<typeof mongoose> {
   const uri = process.env.MONGODB_URI;
 
   if (!uri) {
-    throw new Error("MONGODB_URI is not defined in the environment");
+    return Promise.reject(new Error("MONGODB_URI is not defined in the environment"));
   }
 
-  try {
-    await mongoose.connect(uri);
-    console.log("MongoDB connected");
-  } catch (error) {
-    console.error("MongoDB connection failed:", error);
-    process.exit(1);
+  if (mongoose.connection.readyState === 1) {
+    return Promise.resolve(mongoose);
   }
+
+  if (!connectionPromise) {
+    connectionPromise = mongoose
+      .connect(uri)
+      .then((m) => {
+        console.log("MongoDB connected");
+        return m;
+      })
+      .catch((error) => {
+        connectionPromise = null;
+        throw error;
+      });
+  }
+
+  return connectionPromise;
 }
