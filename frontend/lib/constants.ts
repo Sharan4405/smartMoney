@@ -6,6 +6,8 @@ export const COMPANY = {
   phone: "+91 98280 11802",
   phoneHref: "tel:+919828011802",
   instagramUrl: "https://www.instagram.com/smart_moneyconsultancy",
+  facebookUrl: "https://www.facebook.com/Smartmoneyconsultancy/",
+  linkedinUrl: "https://www.linkedin.com/in/smart-money-consultancy/",
   address: {
     line1: "3rd Floor, E-2 Amrapali Plaza",
     line2: "Amrapali Circle, Vaishali Nagar",

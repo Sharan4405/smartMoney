@@ -12,19 +12,45 @@ export function Footer() {
             <Logo dark />
             <p className="text-[15px] leading-7 text-white/70">{COMPANY.tagline}</p>
             <p className="text-[15px] leading-7 text-white/70">Director: {COMPANY.director}</p>
-            <a
-              href={COMPANY.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Follow Smart Money Consultancy on Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-accent hover:text-accent"
-            >
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                <rect x="3" y="3" width="18" height="18" rx="5" />
-                <circle cx="12" cy="12" r="4.2" />
-                <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
-              </svg>
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href={COMPANY.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Smart Money Consultancy on Instagram"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-accent hover:text-accent"
+              >
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4.2" />
+                  <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href={COMPANY.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Smart Money Consultancy on Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-accent hover:text-accent"
+              >
+                <svg width="14" height="14" viewBox="6 5 11 17" fill="currentColor" stroke="none">
+                  <path d="M14.5 8.5H16V6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V12H7v2.8h2.3V21h2.9v-6.2H14.6l.4-2.8h-2.7v-1.4c0-.8.2-1.4 1.2-1.4z" />
+                </svg>
+              </a>
+              <a
+                href={COMPANY.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Smart Money Consultancy on LinkedIn"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-accent hover:text-accent"
+              >
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                  <rect x="4" y="9" width="3" height="11" />
+                  <circle cx="5.5" cy="5.5" r="1.8" />
+                  <path d="M10 9h3v1.6c.6-1 1.7-1.9 3.4-1.9 3.1 0 4.1 2 4.1 4.9V20h-3v-5.7c0-1.4 0-3.1-1.9-3.1-1.9 0-2.2 1.5-2.2 3v5.8h-3z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
