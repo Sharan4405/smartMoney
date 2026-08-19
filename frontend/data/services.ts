@@ -5,6 +5,7 @@ export type Service = {
   image: string;
   points: string[];
   detail: string;
+  featured?: boolean;
 };
 
 export const SERVICES: Service[] = [
@@ -22,6 +23,7 @@ export const SERVICES: Service[] = [
     ],
     detail:
       "A Systematic Investment Plan lets you invest a fixed amount regularly, building the habit of disciplined investing while benefiting from the power of compounding over time. We help you choose funds aligned to your goals, time horizon, and risk comfort.",
+    featured: true,
   },
   {
     slug: "fd-vs-mutual-funds",
@@ -37,6 +39,7 @@ export const SERVICES: Service[] = [
     ],
     detail:
       "Fixed deposits offer safety and certainty, while mutual funds are built for growth and can be more tax-efficient over the long term. We walk you through the trade-offs so your money is working as hard as you are.",
+    featured: true,
   },
   {
     slug: "health-insurance",
@@ -52,6 +55,7 @@ export const SERVICES: Service[] = [
     ],
     detail:
       "A single health emergency can undo years of savings. We help you find health insurance plans that protect your family while making the most of available tax benefits.",
+    featured: true,
   },
   {
     slug: "life-insurance",
@@ -67,6 +71,112 @@ export const SERVICES: Service[] = [
     ],
     detail:
       "Life insurance and mutual funds work together as two pillars of a strong financial plan — one protects, the other grows. We help you build both into a single, balanced strategy.",
+    featured: true,
+  },
+  {
+    slug: "personal-loans",
+    title: "Personal Loans",
+    shortDescription:
+      "Quick, unsecured funding for your immediate needs — from medical expenses to weddings and travel.",
+    image: "/services/personal-loans.svg",
+    points: [
+      "Collateral-free funding processed quickly",
+      "Flexible tenure and repayment options",
+      "Competitive interest rates matched to your profile",
+      "Minimal documentation, fast approvals",
+    ],
+    detail:
+      "Whether it's a medical emergency, a wedding, or consolidating other debts, a personal loan gives you quick access to funds without pledging collateral. We help you compare lenders and find terms that fit your repayment capacity.",
+  },
+  {
+    slug: "home-loan",
+    title: "Home Loan",
+    shortDescription:
+      "Turn your dream home into reality with financing structured around your income and repayment comfort.",
+    image: "/services/home-loan.svg",
+    points: [
+      "Loans for purchase, construction, or renovation",
+      "Attractive interest rates and long repayment tenures",
+      "Tax benefits under Sections 24(b) and 80C",
+      "Guidance on eligibility and documentation",
+    ],
+    detail:
+      "Buying a home is one of life's biggest financial decisions. We help you compare home loan offers, understand eligibility, and structure EMIs that comfortably fit your monthly budget — so you can move in with confidence, not stress.",
+  },
+  {
+    slug: "business-loans",
+    title: "Business Loans",
+    shortDescription:
+      "Fuel your business's growth, working capital, or expansion plans with the right financing.",
+    image: "/services/business-loans.svg",
+    points: [
+      "Working capital and expansion funding options",
+      "Both secured and unsecured loan structures",
+      "Tailored to your business's cash flow cycle",
+      "Support with documentation and lender matching",
+    ],
+    detail:
+      "Growing a business often means bridging a funding gap — whether for inventory, equipment, or expansion. We help you identify the right loan structure and lender so your business keeps moving without cash flow strain.",
+  },
+  {
+    slug: "mortgage-loans",
+    title: "Mortgage Loans",
+    shortDescription:
+      "Unlock the value of your property with a loan against property for major expenses or business needs.",
+    image: "/services/mortgage-loans.svg",
+    points: [
+      "Borrow against residential or commercial property",
+      "Higher loan amounts at lower interest than unsecured credit",
+      "Longer repayment tenures ease your monthly outflow",
+      "Funds usable for business, education, or personal needs",
+    ],
+    detail:
+      "A loan against property lets you unlock the value of an asset you already own, often at more favourable terms than unsecured borrowing. We help you evaluate whether this route makes sense for your goals.",
+  },
+  {
+    slug: "general-insurance",
+    title: "General Insurance",
+    shortDescription:
+      "Protect your vehicle, home, and valuables against accidents, theft, and unforeseen damage.",
+    image: "/services/general-insurance.svg",
+    points: [
+      "Motor insurance for cars and two-wheelers",
+      "Home and property protection against damage or theft",
+      "Fast, hassle-free claim support",
+      "Coverage options tailored to your assets",
+    ],
+    detail:
+      "From your vehicle to your home, general insurance protects the everyday assets you rely on. We help you choose coverage that matches what you own, so an accident or mishap doesn't turn into a financial setback.",
+  },
+  {
+    slug: "lic-credit-card",
+    title: "LIC Credit Card",
+    shortDescription:
+      "A credit card designed around everyday spending, rewards, and added financial flexibility.",
+    image: "/services/lic-credit-card.svg",
+    points: [
+      "Reward points on everyday spends",
+      "Added financial flexibility for planned and unplanned expenses",
+      "Assistance with application and eligibility",
+      "Complements your broader financial planning",
+    ],
+    detail:
+      "The right credit card adds flexibility to your monthly finances when used responsibly. We help you understand the LIC Credit Card's features and whether it fits well alongside your existing financial plan.",
+  },
+  {
+    slug: "bank-credit-cards",
+    title: "All Bank Credit Cards",
+    shortDescription:
+      "Compare and apply for credit cards across leading banks, matched to your spending habits and eligibility.",
+    image: "/services/bank-credit-cards.svg",
+    points: [
+      "Access to cards across multiple leading banks",
+      "Comparison based on rewards, fees, and eligibility",
+      "Guidance on the best fit for your spending pattern",
+      "Support through the application process",
+    ],
+    detail:
+      "With so many credit cards on the market, picking the right one comes down to your spending habits, income, and what rewards actually matter to you. We help you compare options across banks and apply for the card that fits best.",
   },
 ];
 

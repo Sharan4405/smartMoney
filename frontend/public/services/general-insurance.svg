@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">General insurance illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <circle cx="200" cy="168" r="100" fill="#0B1B33" opacity="0.05"/>
+
+  <!-- dashed links from badge to each protected asset -->
+  <path d="M170 130 C150 150 138 170 130 188" fill="none" stroke="#1F4D3A" stroke-width="3" stroke-dasharray="5 6" stroke-linecap="round"/>
+  <path d="M230 130 C250 150 262 170 270 186" fill="none" stroke="#1F4D3A" stroke-width="3" stroke-dasharray="5 6" stroke-linecap="round"/>
+
+  <!-- check badge -->
+  <circle cx="200" cy="104" r="46" fill="#D9A441"/>
+  <circle cx="200" cy="104" r="46" fill="none" stroke="#E8B84B" stroke-width="4"/>
+  <path d="M180 104 L194 118 L222 88" fill="none" stroke="#0B1B33" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- car -->
+  <path d="M96 218 L106 200 C108 196 112 194 116 194 L150 194 C154 194 158 196 160 200 L170 218 Z" fill="#0B1B33"/>
+  <rect x="88" y="216" width="88" height="11" rx="5.5" fill="#0B1B33"/>
+  <circle cx="108" cy="229" r="9" fill="#5B6472"/>
+  <circle cx="108" cy="229" r="4" fill="#F6F8FB"/>
+  <circle cx="156" cy="229" r="9" fill="#5B6472"/>
+  <circle cx="156" cy="229" r="4" fill="#F6F8FB"/>
+
+  <!-- house -->
+  <path d="M243 222 L268 199 L293 222 V241 H243 Z" fill="#D9A441"/>
+  <path d="M238 224 L268 197 L298 224" fill="none" stroke="#0B1B33" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="260" y="223" width="16" height="18" fill="#0B1B33"/>
+</svg>

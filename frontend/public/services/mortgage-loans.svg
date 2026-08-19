@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">Mortgage loans illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <circle cx="200" cy="170" r="100" fill="#0B1B33" opacity="0.05"/>
+
+  <!-- house -->
+  <path d="M84 190 L130 148 L176 190 V228 H84 Z" fill="#1F4D3A"/>
+  <path d="M76 194 L130 145 L184 194" fill="none" stroke="#0B1B33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="112" y="196" width="24" height="32" fill="#0B1B33"/>
+
+  <!-- transfer arrow: unlocking value -->
+  <path d="M198 176 H258 M258 176 L244 164 M258 176 L244 188" fill="none" stroke="#D9A441" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- coin stack -->
+  <ellipse cx="298" cy="206" rx="34" ry="24" fill="#2E6B4F" opacity="0.6"/>
+  <ellipse cx="304" cy="192" rx="34" ry="24" fill="#1F4D3A" opacity="0.85"/>
+  <ellipse cx="310" cy="178" rx="36" ry="26" fill="#D9A441"/>
+  <ellipse cx="310" cy="178" rx="36" ry="26" fill="none" stroke="#E8B84B" stroke-width="3"/>
+  <text x="310" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0B1B33">&#8377;</text>
+</svg>

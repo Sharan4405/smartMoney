@@ -4,6 +4,8 @@ import { ServiceCard } from "@/components/shared/ServiceCard";
 import { Reveal } from "@/components/shared/Reveal";
 import { SERVICES } from "@/data/services";
 
+const FEATURED_SERVICES = SERVICES.filter((service) => service.featured);
+
 export function ServicesSection() {
   return (
     <section className="py-20 sm:py-24">
@@ -17,7 +19,7 @@ export function ServicesSection() {
         </Reveal>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map((service, i) => (
+          {FEATURED_SERVICES.map((service, i) => (
             <Reveal key={service.slug} delay={i * 80}>
               <ServiceCard service={service} />
             </Reveal>

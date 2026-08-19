@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">All bank credit cards illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <circle cx="200" cy="172" r="100" fill="#0B1B33" opacity="0.05"/>
+
+  <!-- back card -->
+  <rect x="88" y="82" width="180" height="112" rx="14" fill="#1F4D3A"/>
+  <rect x="88" y="108" width="180" height="16" fill="#14384B" opacity="0.4"/>
+
+  <!-- middle card -->
+  <rect x="114" y="108" width="180" height="112" rx="14" fill="#0B1B33"/>
+  <rect x="114" y="134" width="180" height="16" fill="#14294A"/>
+
+  <!-- front card -->
+  <rect x="140" y="134" width="180" height="112" rx="14" fill="#D9A441"/>
+  <rect x="164" y="204" width="34" height="25" rx="5" fill="#0B1B33"/>
+  <circle cx="272" cy="176" r="15" fill="#1F4D3A" opacity="0.9"/>
+  <circle cx="290" cy="176" r="15" fill="#0B1B33" opacity="0.9"/>
+  <rect x="164" y="180" width="70" height="8" rx="4" fill="#0B1B33" opacity="0.55"/>
+</svg>

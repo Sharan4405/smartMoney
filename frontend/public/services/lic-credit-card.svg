@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">LIC credit card illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <circle cx="192" cy="168" r="100" fill="#0B1B33" opacity="0.05"/>
+
+  <!-- card -->
+  <rect x="96" y="112" width="216" height="136" rx="16" fill="#0B1B33"/>
+  <rect x="96" y="144" width="216" height="24" fill="#14294A"/>
+  <rect x="118" y="188" width="36" height="27" rx="5" fill="#D9A441"/>
+  <rect x="118" y="222" width="76" height="8" rx="4" fill="#F6F8FB" opacity="0.5"/>
+
+  <!-- LIC seal badge -->
+  <circle cx="272" cy="102" r="30" fill="#D9A441"/>
+  <circle cx="272" cy="102" r="30" fill="none" stroke="#E8B84B" stroke-width="3"/>
+  <path d="M256 128 L262 148 L272 136 L282 148 L288 128" fill="#2E6B4F"/>
+  <text x="272" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1B33">LIC</text>
+</svg>

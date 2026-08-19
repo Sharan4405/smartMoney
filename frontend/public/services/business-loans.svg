@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title">
+  <title id="title">Business loans illustration</title>
+  <rect width="400" height="300" rx="16" fill="#F6F8FB"/>
+  <circle cx="190" cy="175" r="100" fill="#0B1B33" opacity="0.05"/>
+
+  <!-- growth bars behind the case -->
+  <rect x="252" y="128" width="14" height="34" rx="3" fill="#E8B84B"/>
+  <rect x="270" y="108" width="14" height="54" rx="3" fill="#D9A441"/>
+  <rect x="288" y="86" width="14" height="76" rx="3" fill="#1F4D3A"/>
+  <path d="M252 96 L296 66 M296 66 H278 M296 66 V84" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- briefcase -->
+  <path d="M158 130 V116 C158 106 166 98 176 98 H204 C214 98 222 106 222 116 V130"
+        fill="none" stroke="#1F4D3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="120" y="130" width="140" height="98" rx="14" fill="#0B1B33"/>
+  <line x1="120" y1="164" x2="260" y2="164" stroke="#2E6B4F" stroke-width="3" opacity="0.6"/>
+  <rect x="176" y="152" width="28" height="22" rx="4" fill="#D9A441"/>
+</svg>
