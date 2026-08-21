@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-white">
       <div className="mx-auto w-full max-w-7xl px-6 py-14 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.6fr_1fr]">
           <div className="flex flex-col gap-4">
             <Logo dark />
             <p className="text-[15px] leading-7 text-white/70">{COMPANY.tagline}</p>
@@ -55,24 +55,28 @@ export function Footer() {
 
           <div className="flex flex-col gap-3">
             <h4 className="text-[16px] font-bold text-accent">Quick Links</h4>
+            <div className="grid grid-flow-col grid-rows-6 gap-x-6 gap-y-2">
             {NAV_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className="text-[15px] text-white/75 hover:text-white">
                 {link.label}
               </Link>
             ))}
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
             <h4 className="text-[16px] font-bold text-accent">Services</h4>
-            {SERVICES.map((service) => (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                className="text-[15px] text-white/75 hover:text-white"
-              >
-                {service.title}
-              </Link>
-            ))}
+            <div className="grid grid-flow-col grid-rows-6 gap-x-6 gap-y-2">
+              {SERVICES.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/services/${service.slug}`}
+                  className="text-[15px] text-white/75 hover:text-white"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">

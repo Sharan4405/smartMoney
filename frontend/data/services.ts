@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "fd-vs-mutual-funds",
-    title: "FD vs Mutual Funds Guidance",
+    title: "FD vs Mutual Funds",
     shortDescription:
       "Understand how fixed deposits and mutual funds differ so you can choose the right mix for your goals.",
     image: "/services/fd-vs-mutual-funds.svg",
